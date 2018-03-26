@@ -1,16 +1,13 @@
 package a3dol.faceless.io.a3dol
 
 import android.graphics.Canvas
+import android.graphics.Paint
+import android.graphics.Path
+import android.graphics.Point
 import android.os.Bundle
 import com.google.vr.sdk.base.*
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.microedition.khronos.egl.EGLConfig
-import android.R.attr.y
-import android.R.attr.x
-import android.graphics.Paint
-import android.graphics.Path
-import android.graphics.Path.FillType
-import android.graphics.Point
 
 
 class MainActivity : GvrActivity(), GvrView.StereoRenderer {
@@ -45,23 +42,24 @@ class MainActivity : GvrActivity(), GvrView.StereoRenderer {
     }
 
     override fun onSurfaceChanged(p0: Int, p1: Int) {
-        TODO("not implemented")
+//        TODO("not implemented")
     }
 
     override fun onSurfaceCreated(conf: EGLConfig?) {
-        TODO("not implemented")
+//        TODO("not implemented")
     }
 
     override fun onDrawEye(eye: Eye?) {
-        TODO("not implemented")
+//        TODO("not implemented")
     }
 
     override fun onFinishFrame(port: Viewport?) {
-        TODO("not implemented")
+//        TODO("not implemented")
     }
 
     override fun onRendererShutdown() {
-        TODO("not implemented")
+//        TODO("not implemented")
+        gvrView.shutdown()
     }
 
     /**
